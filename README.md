@@ -4,5 +4,5 @@ Hi there!! This is recopilation from [Codewars](www.codewars.com). [Codewars](ww
 
 Notice, this proyect is totally done on Replit.
 
-## [Python Exercises]()
+## [Python Exercises](https://github.com/plasenca/Codewars-Exercices/tree/master/Python%20Exercises)
 

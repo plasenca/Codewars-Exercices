@@ -1,6 +1,3 @@
-import log_file as log
-
-
 # What I send to Codewars
 def rolldice_sum_prob(num, quant_dies):
     

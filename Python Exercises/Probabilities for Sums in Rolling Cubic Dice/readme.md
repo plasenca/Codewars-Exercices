@@ -1,4 +1,4 @@
-# DESCRIPTION:
+# Probabilities for Sums in Rolling Cubic Dice
 ![Dados](https://i.imgur.com/E4b42Sm.jpeg)
 
 When we throw 2 classical dice (values on each side from 1 to 6) we have 36 (6 * 6) different results.
