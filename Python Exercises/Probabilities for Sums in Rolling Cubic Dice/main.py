@@ -22,7 +22,7 @@ def rolldice_sum_prob(num, quant_dies):
 
 # When I refactor the code 
 
-def rolldice_sum_prob(num, quant_dies):
+def rolldice_sum_prob_2(num, quant_dies):
     
     from itertools import product
     # Initialize local variables
@@ -38,18 +38,18 @@ def rolldice_sum_prob(num, quant_dies):
     return prob
     
 
-#? ¿Qué refactoricé?
-#* Cambié el uso de la función "combinations_with_replacement", ya que tenía que hacer comversiones.
-#* Estas conversiones, primero a set y luego a list, se dieron porque existían valores repetidos y
-#* convertilos a set solo me retornaba los valores no repetidos. Era una buena solución, pero siento
-#* que no era la mejor. Después, lo transformaba a lista porque necesitaba trabajar con ese objeto.
-#* Era una buena solución, pero consumía más memoria de la que se nesecitaba realmente, tanto que tuve
-#* dos errores en CodeWars, por el hecho de el tiempo de ejecución del programa.
-#* Refactorización:
-#* Esta refactorización fue hecha con dos ideas bien claras: evitar el uso de conversión de objetos y
-#* evitar guardar todas esas combinaciones de números en memoria, ya que solo era necesario iterarlo.
-#* Es por eso que usela función "product" de la librería itertools, que resolvió el primer problema.
-#* Segundo, evité usar una variable y metí directamente el "product object" en la iteración for.
-#* Esto, sumandole que el código se ve mejor diseñado, tiene mejor rendimiento que el anterior.
+#? What did I refactor?
+#* I changed the use of the "combinations_with_replacement" function, since it had to do conversions.
+#* These conversions, first to set and then to list, occurred because there were repeated values ​​and
+#* convert them to set only returned the non-repeated values. It was a good solution, but I feel
+#* which was not the best. Later, I would transform it to a list because I needed to work with that object.
+#* It was a good solution, but it consumed more memory than was really needed, so much so that I had
+#* two errors in CodeWars, due to the fact of the execution time of the program.
+#* Refactoring:
+#* This refactoring was done with two very clear ideas: avoid the use of object conversion and
+#* avoid saving all those combinations of numbers in memory, since it was only necessary to iterate it.
+#* That's why I used the itertools library's "product" function, which solved the first problem.
+#* Second, I avoided using a variable and directly put the "product object" in the for iteration.
+#* This, adding that the code looks better designed, has better performance than the previous one.
 
-print(rolldice_sum_prob(35, 7))
+print(rolldice_sum_prob_2(35, 7))

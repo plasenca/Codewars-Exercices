@@ -13,8 +13,6 @@ def max(num1: Union[int, float], num2:int|float) -> int|float:
     num1, num2 -- Numbers to compare
     Return: int | float
     """
-    
-    
     if isinstance(num1, (int, float)) and isinstance(num2, (int, float)):
         if num1 > num2:
             return num1
